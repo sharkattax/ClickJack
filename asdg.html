@@ -1,0 +1,97 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>click Jacking</title>
+  <link rel="stylesheet" href="hi.css">
+  <style media="screen">
+
+  html, body, iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 0px;
+  }
+
+  .top {
+    position: absolute;
+    top: 10px;
+    height: 36px;
+    width: 100%;
+    visibility: hidden;
+  }
+
+  .top-nav {
+    width: 994px;
+    margin: 0 auto;
+    position: relative;
+    visibility: hidden;
+  }
+
+  .clickjack {
+    position: relative;
+    background: rgba(255, 255, 255, 0);
+    left: 660px;
+    width: 41px;
+    height: 17px;
+    cursor: pointer;
+    visibility: visible;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #132d72;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #800000;
+}
+
+.active {
+  background-color:#800000;
+}
+
+li {
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+</style>
+<script type="text/javascript">
+var cj = $('.clickjack');
+
+cj.click(function() {
+alert('gotcha!');
+});
+</script>
+</head>
+<body background="giphy (1).gif">
+  <ul>
+    <li><a href="file:///C:/Users/dv126379/Desktop/Cyber%20Sandbox/getFished.html">Home</a></li>
+    <li><a href="file:///C:/Users/dv126379/Desktop/Cyber%20Sandbox/qwerty.html">Courses</a></li>
+    <li><a href="file:///C:/Users/dv126379/Desktop/Cyber%20Sandbox/asdg.html">Careers</a></li>
+    <li><a href="file:///C:/Users/dv126379/Desktop/Cyber%20Sandbox/poop.html">About</a></li>
+    <li><a href="file:///C:/Users/dv126379/Desktop/Cyber%20Sandbox/hey.html">Login</a></li>
+  </ul>
+  <div class="top">
+    <div class="top-nav">
+      <div class="clickjack"></div>
+</body>
+</html>

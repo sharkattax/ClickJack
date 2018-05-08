@@ -1,0 +1,31 @@
+html, body, iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0px;
+}
+
+.top {
+  position: absolute;
+  top: 10px;
+  height: 36px;
+  width: 100%;
+  visibility: hidden;
+}
+
+.top-nav {
+  width: 994px;
+  margin: 0 auto;
+  position: relative;
+  visibility: hidden;
+}
+
+.clickjack {
+  position: relative;
+  background: rgba(255, 255, 255, 0);
+  left: 660px;
+  width: 41px;
+  height: 17px;
+  cursor: pointer;
+  visibility: visible;
+}
